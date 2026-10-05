@@ -1,0 +1,17 @@
+{
+    "persons": {
+        "Alex": {
+            "birth": {
+                "2017-01": null
+            },
+            "age": {
+                "2017-01": null
+            }
+        }
+    },
+    "households": {
+        "_": {
+            "adults": ["Alex"]
+        }
+    }
+}

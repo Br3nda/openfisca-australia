@@ -1,0 +1,22 @@
+---
+name: Set up the project
+description: Install Python and the project with its dev extras.
+
+inputs:
+  python-version:
+    description: Python version to install.
+    default: "3.11"
+
+runs:
+  using: composite
+  steps:
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: ${{ inputs.python-version }}
+        cache: pip
+        cache-dependency-path: pyproject.toml
+
+    - name: Install the project
+      shell: bash
+      run: make install

@@ -1,0 +1,6 @@
+[tools]
+# openfisca-core supports Python 3.9 to 3.11
+python = "3.11"
+
+[env]
+_.python.venv = { path = ".venv", create = true }

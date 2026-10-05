@@ -1,11 +1,15 @@
 # openfisca-australia
 
-An [OpenFisca](https://openfisca.org) rules-as-code model for Australia.
+An experimental pilot of rules as code for Australia, built on [OpenFisca](https://openfisca.org).
 
 This is a bootstrapped skeleton built from the structure of the
 [OpenFisca country template](https://github.com/openfisca/country-template).
 It defines the entities (person, household) and a single generic variable
 (`age`, computed from `birth`). It contains no Australian legislation yet.
+
+**Status: experimental.** This is a pilot. The scope, structure and results can change
+without notice, and nothing here should be relied on as an authoritative statement of
+the law or of anyone's entitlements.
 
 ## Setup
 
@@ -30,6 +34,11 @@ make serve-local   # web API at http://localhost:5000
 
 Each parameter and variable should cite the primary source (the Act, regulation
 or agency guidance) in its `reference` field.
+
+## Working with AI agents
+
+Guidance for AI coding agents (setup, commands, CI and conventions) is in
+[AGENTS.md](AGENTS.md). Human contributors will find it a useful summary too.
 
 ## Licence
 
